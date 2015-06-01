@@ -1,0 +1,87 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border-top: 5px solid #4c4066;
+  background: url('assets/images/background-right.jpg') right top no-repeat,
+            url('assets/images/background-left.jpg') left no-repeat;
+  background-size: 420px auto, auto 900px;
+  background-attachment: fixed, fixed;
+}
+#wrapper {
+  width: 90%;
+  max-width: 1040px;
+  margin: 0 auto;
+  min-width: 900px;
+}
+h1 {
+  margin: 15px 0;
+  font-size: 85px;
+  color: #6f6c7c;
+  text-shadow: 1px 1px 2px #72629a;
+}
+#left-bar {
+  width: 25%;
+  min-width: 200px;
+  display: inline-block;
+}
+#container {
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+#left-bar img {
+  width: 100%;
+}
+.frame {
+  padding: 5px 15px 15px;
+  background-color: white;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.rounded {
+  border-radius: 10px;
+}
+#left-bar .frame img {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 7px 0;
+}
+.references {
+  margin-top: 30px;
+  text-align: center;
+}
+a.btn {
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  background-color: #9a95d8;
+  border-radius: 5px;
+	box-shadow: 2px 2px 4px #4e4c80;
+}
+a.btn:hover {
+  box-shadow: 1px 1px 2px #4e4c80 inset;
+}
+p.about {
+  font-size: 0.9em;
+  font-style: italic;
+}
+p:not(.about) {
+	line-height: 1.3em;
+}
+.achievements ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.achievements li {
+  padding: 10px 40px;
+  font-size: 0.75em;
+}
+.achievements li:nth-child(odd) {
+	background-color: rgba(176, 175, 192, 0.2)
+}
