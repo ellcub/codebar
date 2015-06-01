@@ -1,0 +1,54 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  border-top: 5px solid #4c4066;
+  margin: 0;
+  padding: 10px 150px;
+  font-size: 12px;
+  color: #666666;
+}
+header {
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  padding: 10px auto 10px;
+  margin-bottom: 10px;
+}
+header h1 {
+  color: #cccccc;
+}
+header ul {
+  list-style: none;
+}
+header li {
+  display: inline-block;
+}
+
+article {
+  width: 60%;
+  font-size: 1.2em;
+}
+#side-menu-container {
+  position: absolute;
+  top: 150px;
+  right: 350px;
+}
+#side-menu {
+  position: fixed;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 150px;
+}
+#side-menu ul {
+  list-style: none;
+}
+#side-menu ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: purple;
+}
+
+#women-programmers section {
+  display: inline-block;
+  padding: 10px;
+}
