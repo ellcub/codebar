@@ -55,6 +55,13 @@ section {
 figure {
   margin: 0;
 }
+figcaption {
+  text-align: center;
+  border-bottom: 1px dotted blue;
+  font-style: italic;
+  line-height: 1.5em;
+  padding-bottom: 2px;
+}
 #women-programmers figure:hover {
   transform: rotate(20deg);
 }
