@@ -55,3 +55,6 @@ section {
 figure {
   margin: 0;
 }
+#women-programmers figure:hover {
+  transform: rotate(20deg);
+}
