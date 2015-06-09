@@ -38,21 +38,15 @@ article {
 }
 #side-menu {
   position: fixed;
-  background-color: #eeeeee;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
+  background-color: #fdfdfc;
+  border: 1px solid #e7e6e6;
+  border-radius: 20px;
   padding: 20px;
   width: 150px;
 }
 #side-menu ul {
   list-style: none;
 }
-#side-menu ul li a {
-  text-decoration: none;
-  font-size: 1.2em;
-  color: purple;
-}
-
 section {
   display: inline-block;
   padding: 10px;
@@ -69,4 +63,15 @@ figcaption {
 }
 #women-programmers figure:hover {
   transform: rotate(20deg);
+}
+nav a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: purple;
+}
+nav a:hover {
+  border-bottom: 1px dashed purple;
+}
+aside nav {
+  text-align: left;
 }
