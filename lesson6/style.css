@@ -13,7 +13,10 @@ header {
   margin-bottom: 10px;
 }
 header h1 {
-  color: #cccccc;
+  color: #666666;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 2em;
 }
 header ul {
   list-style: none;
@@ -21,7 +24,9 @@ header ul {
 header li {
   display: inline-block;
 }
-
+h1, h2 {
+    color: #333333;
+}
 article {
   width: 60%;
   font-size: 1.2em;
