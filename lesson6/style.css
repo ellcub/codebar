@@ -48,7 +48,10 @@ article {
   color: purple;
 }
 
-#women-programmers section {
+section {
   display: inline-block;
   padding: 10px;
+}
+figure {
+  margin: 0;
 }
