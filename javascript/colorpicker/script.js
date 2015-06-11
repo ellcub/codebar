@@ -18,6 +18,9 @@ $(document).ready(function() {
   })
 
   $(document).on('click', '#add-to-favorite', function() {
+    if ($('#colors .item').length >= 16) {
+      $('#colors .item:last').remove();
+    }
     color = $('#color').val();
     addBox(color);
     $('#color').val("");
