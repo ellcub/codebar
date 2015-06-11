@@ -3,7 +3,8 @@ $(document).ready(function() {
 
   $(document).on('keydown keyup keypress', '#color', function() {
     color = $(this).val();
-    setPreviewColor(color);
+    rgb = setPreviewColor(color);
+    $('.color-code').text(rgb);
   })
 
 })
@@ -11,4 +12,5 @@ $(document).ready(function() {
 function setPreviewColor(color) {
   // set background color
   $('.preview').css('background-color', color);
+  return $('.preview').css('background-color');
 }
