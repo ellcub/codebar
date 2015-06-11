@@ -24,6 +24,9 @@ $(document).ready(function() {
     color = $('#color').val();
     addBox(color);
     $('#color').val("");
+
+    // reset focus
+    $('#color').focus();
   })
 
 })
