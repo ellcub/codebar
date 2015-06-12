@@ -29,6 +29,14 @@ $(document).ready(function() {
     $('#color').focus();
   })
 
+  var previewColor;
+  $(document).on('mouseenter', '#colors .item', function() {
+    previewColor = $('.preview').css('background-color');
+    setPreviewColor($(this).css('background-color'));
+  }).on('mouseleave', '#colors .item', function() {
+    setPreviewColor(previewColor);
+  })
+
 })
 
 function setPreviewColor(color) {
