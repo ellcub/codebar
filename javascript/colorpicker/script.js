@@ -8,9 +8,7 @@ $(document).ready(function() {
   })
 
   // initialise preview box with random color
-  random_position = Math.floor( Math.random() * colors.length);
-  random_color = colors[random_position];
-  $('.preview').css('background-color', random_color);
+  setPreviewColor(colors[Math.floor( Math.random() * colors.length)]);
 
   // set color from text input
   $(document).on('keydown keyup keypress', '#color', function() {
@@ -24,11 +22,9 @@ $(document).ready(function() {
     if ($('#colors .item').length >= 16) {
       $('#colors .item:last').remove();
     }
-    color = $('#color').val();
+    var color = $('#color').val();
     addBox(color);
     $('#color').val("");
-
-    // reset focus
     $('#color').focus();
   })
 
