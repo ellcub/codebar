@@ -5,3 +5,14 @@ function getGithubInfo(username) {
 
   return xhr;
 }
+
+
+$(document).ready(function() {
+  $(document).on('keypress', '#username', function(e) {
+    if (e.which === 13) {
+      // get val() from input field
+
+      // assign getGithubInfo(username) to a variable response
+    }
+  })
+});
