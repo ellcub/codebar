@@ -8,9 +8,13 @@ function getGithubInfo(username) {
 
 function noSuchUser(username) {
   $("#profile h2").html("No such user: " + username);
+  $("#profile .information").hide();
+  $("#profile .avatar").hide();
 }
 
 function showUser(user) {
+  $("#profile .information").show();
+  $("#profile .avatar").show();
   // Display the user's Github id
   $("#profile h2").html(user.login + " is GitHub user #" + user.id);
   // Add a link to the user's Github profile in #profile .information. The link should have a class profile
