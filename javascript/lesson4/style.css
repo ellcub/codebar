@@ -66,3 +66,7 @@ h2 {
 .profile:hover {
   background-color: #b300b3;
 }
+
+.avatar img {
+  height: 220px;
+}
