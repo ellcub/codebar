@@ -6,6 +6,10 @@ function getGithubInfo(username) {
   return xhr;
 }
 
+function noSuchUser(username) {
+  $("#profile h2").html("No such user: " + username)
+}
+
 
 $(document).ready(function() {
   $(document).on('keypress', '#username', function(e) {
@@ -17,6 +21,11 @@ $(document).ready(function() {
       // assign getGithubInfo(username) to a variable response
       var response = getGithubInfo(username);
       console.log(response);
+      if (response.status === 200) {
+
+      } else {
+        noSuchUser(username);
+      }
     }
 
   })
